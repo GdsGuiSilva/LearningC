@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+	int i,num,maior,menor;
+	printf("Escreva o numero 1 :\n");
+	scanf("%d",&num);
+	maior = num;
+	menor = num;
+	
+	for(i=1;i<10;i++)
+	{
+		printf("Escreva o numero : %d \n",i+1);
+		scanf("%d",&num);
+		if(num>maior)
+		{
+			maior = num;
+		}
+		if(num<menor)
+		{
+			menor = num;
+		}
+	}
+	printf("O maior e : %d \n",maior);
+	printf("O menor e : %d ",menor);
+}
